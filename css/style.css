@@ -24,5 +24,5 @@ header h1{
 	white-space: nowrap;
 	background-image: url("../img/maker-logo.png");
 	background-repeat: no-repeat;
-	/*float: left;*/
+	float: left;
 }
