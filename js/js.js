@@ -6,5 +6,5 @@ xhr.onload = function(){
 	}
 }
 
-xhr.open('GET', 'data/data-html', true);
+xhr.open('GET', 'data/data.html', true);
 xhr.send(null);
