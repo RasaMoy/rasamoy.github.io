@@ -1,15 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:700,400);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body{
 	width: 100%;
 	font-family: 'Open Sans', arial, sans-serif;
 	margin: 0 auto;
+	margin-bottom: 70px;
 }
 header{
 	border-bottom: 3px solid #000;
 	height: 100px;
-	
 }
 
 header h1{
@@ -39,8 +44,18 @@ h2{
 	font-weight: normal;
 }
 
+footer{
+	border-top: 3px solid #000;
+	height: 100px;
+	width: 960px;
+	position: absolute;
+	bottom: -90px;
+}
+footer p{
+	position: relative;
+}
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 960px) {
 body{
 	width: 960px;
 	}
@@ -99,6 +114,10 @@ h2{
 	}
 .event:last-child p{
 	border: none;
+}
+
+footer{
+	border-top: 5px solid #000;
 }
 
 }
