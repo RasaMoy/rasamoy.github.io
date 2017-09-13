@@ -46,7 +46,7 @@ h2{
 
 footer{
 	border-top: 3px solid #000;
-	height: 100px;
+	height: 70px;
 	width: 960px;
 	position: absolute;
 	bottom: -90px;
@@ -118,6 +118,7 @@ h2{
 
 footer{
 	border-top: 5px solid #000;
+	height: 100px;
 }
 
 }
