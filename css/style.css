@@ -46,10 +46,10 @@ h2{
 
 footer{
 	border-top: 3px solid #000;
-	height: 70px;
-	width: 960px;
+	height: 100px;
+	width: 100%;
 	position: absolute;
-	bottom: -90px;
+	bottom: -80px;
 }
 footer p{
 	position: relative;
@@ -119,6 +119,7 @@ h2{
 footer{
 	border-top: 5px solid #000;
 	height: 100px;
+	width: 960px;
 }
 
 }
