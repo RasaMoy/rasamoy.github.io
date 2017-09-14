@@ -1,10 +1,18 @@
 var xhr = new XMLHttpRequest();
-
 xhr.onload = function(){
 	if (xhr.status === 200) {
-		document.getElementById('content').innerHTML = xhr.responseText;
-	}
-}
+		responseObject = JSON.parse(xhr.responseText);
 
-xhr.open('GET', 'data/data.html', true);
+		var newContent = '';
+		for (var i = 0; i<responseObject.events.length; i++){
+			newContent += '<div class="event">';
+	        newContent += '<img src="' +responseObject.events[i].map +'" alt="">';
+	        newContent += '<p class="bold">' + responseObject.events[i].location +'</span></p></div>'
+		}
+
+		document.getElementById('content').innerHTML = newContentM
+	}
+};
+
+xhr.open('POST', '../data/data.json', true);
 xhr.send(null);
