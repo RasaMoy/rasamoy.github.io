@@ -9,7 +9,7 @@ xhr.onload = function(){
 	        newContent += '<img src="' +responseObject.events[i].map +'" alt="">';
 	        newContent += '<p class="bold">' + responseObject.events[i].location +'</span></p></div>'
 		}
-		document.getElementById('content').innerHTML = newContentM
+		document.getElementById('content').innerHTML = newContent;
 	}
 };
 
