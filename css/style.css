@@ -59,6 +59,31 @@ nav{
 }
 
 
+
+
+nav ul{
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav li{
+
+}
+
+li a , .button-menu{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+}
+
+li a.active{
+	color: #D71A00;
+}
+
+li a:hover{
+	color: #D71A00;
+}
+
 /*responsive menu*/
 .nav-responsive{
 	transform: translateX(250px);
@@ -93,29 +118,7 @@ nav{
       right: 0;
       bottom: 0;
       background-color: rgba(0,0,0,0.6);
-}
-
-nav ul{
-	list-style-type: none;
-	display: inline-block;
-}
-
-nav li{
-
-}
-
-li a , .button-menu{
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #000;
-}
-
-li a.active{
-	color: #D71A00;
-}
-
-li a:hover{
-	color: #D71A00;
+      transition: background-color linear 0.3s;
 }
 
 h2{
