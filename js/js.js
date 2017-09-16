@@ -42,5 +42,10 @@ $('nav a').on('click', function(e){
 	$(this).addClass('active');
 	$('main').remove();
 	$('.container').load(url + ' #main');
+
+	$('body').removeClass('overflowh');
+	$('body').addClass('nav-pusherback');
+	$('body').removeClass('nav-pusher');
+	$('#site-cache').removeClass('site-cache');
 });
 
