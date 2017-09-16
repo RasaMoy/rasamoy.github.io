@@ -44,6 +44,7 @@ $('nav a').on('click', function(e){
 
 	$('main').remove();
 	$('.container').load(url + '/ #main');
+	alert(url);
 
 });
 
