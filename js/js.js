@@ -1,4 +1,8 @@
 
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+
 //  --------------JSON
 
 // var xhr = new XMLHttpRequest();
