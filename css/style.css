@@ -10,14 +10,13 @@ body{
 	width: 100%;
 	font-family: 'Open Sans', arial, sans-serif;
 	margin: 0 auto;
-	margin-bottom: 70px;
 }
 
 header{
 	border-bottom: 3px solid #000;
 	height: 75px;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 0
 	left: 0;
 	background-color: #fff;
@@ -129,6 +128,13 @@ h2{
 	text-align: center;
 }
 
+.box3 p{
+	padding: 0px 30px;
+	text-align: justify;
+	color: #666;
+	line-height: 1.4em;
+}
+
 .event p {
 	font-weight: bold;
 	color: #666;
@@ -138,17 +144,7 @@ h2{
 	font-weight: normal;
 }
 
-footer{
-	border-top: 3px solid #000;
-	height: 100px;
-	width: 100%;
-	position: absolute;
-	bottom: -80px;
-}
 
-footer p{
-	position: relative;
-}
 
 @media only screen and (min-width: 960px) {
 body{
@@ -212,12 +208,7 @@ nav li {
 	padding-top: 130px;
 }
 
-h2{
-	font-size: 2.4em;
-	letter-spacing: -0.06em;
-	display: inline-block;
-	margin-top: 3px;
-}
+
 
 .content{
 	display: flex;
@@ -227,7 +218,24 @@ h2{
 	margin-top: 26px;
 	text-align: center;
 }
+h2{
+	font-size: 2.4em;
+	letter-spacing: -0.06em;
+	flex-direction: row;
+	margin-top: 3px;
+	flex-grow: 3;
+	text-align: left;
+}
 
+.box3{
+	width: calc(100%/3);
+}
+.box3 p{
+	padding: 0px 10px;
+	text-align: left;
+	color: #666;
+	line-height: 1.4em;
+}
 .event{
 	/*display: inline-block;*/
 	width: calc(100%/3);

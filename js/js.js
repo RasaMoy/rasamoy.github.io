@@ -22,13 +22,28 @@
 
 //  --------------JSONP
 
-function showEvents(data){
-	var newContent = '';
+// function showEvents(data){
+// 	var newContent = '';
 
-	for(var i = 0; i < data.events.length; i++){
-		newContent += '<div class="event">';
-	    newContent += '<img src="' + data.events[i].map +'" alt="">';
-	    newContent += '<p class="bold">' + data.events[i].location +'</span></p></div>'
-	}
-	document.getElementById('content').innerHTML = newContent;
-}
+// 	for(var i = 0; i < data.events.length; i++){
+// 		newContent += '<div class="event">';
+// 	    newContent += '<img src="' + data.events[i].map +'" alt="">';
+// 	    newContent += '<p class="bold">' + data.events[i].location +'</span></p></div>'
+// 	}
+// 	document.getElementById('content').innerHTML = newContent;
+// }
+
+
+// ---------------jquery ajax
+$('nav a').on('click', function(e){
+	e.preventDefault();
+	var url = this.href;
+
+	$('nav a.active').removeClass('active');
+	$(this).addClass('active');
+
+	$('main').remove();
+	$('.container').load(url + '#container');
+
+});
+
