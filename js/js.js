@@ -41,10 +41,7 @@ $('nav a').on('click', function(e){
 
 	$('nav a.active').removeClass('active');
 	$(this).addClass('active');
-
 	$('main').remove();
 	$('.container').load(url + ' #main');
-	alert(url);
-
 });
 
