@@ -43,7 +43,7 @@ $('nav a').on('click', function(e){
 	$(this).addClass('active');
 
 	$('main').remove();
-	$('.container').load(url + '#container');
+	$('.container').load(url + '#main');
 
 });
 
