@@ -45,7 +45,7 @@ $('nav a').on('click', function(e){
 	$('nav a.active').removeClass('active');
 	$(this).addClass('active');
 	$('main').remove();
-	$('.container').load(url + ' #main');
+	$('.container').load(url + ' #main').hide().fadeIn('slow');
 
 	$('body').removeClass('overflowh');
 	$('body').addClass('nav-pusherback');
