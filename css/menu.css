@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', arial, sans-serif;
+	background: #E8e8e8;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #34495E;
+	padding: 20px;
+}
+
+header .button-menu{
+	color: #FFF;
+	font-size: 20px;
+	cursor: pointer;
+	
+}
+
+.navegacion{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.navegacion ul{
+	width: 320px;
+	height: 100%;
+	background: #FFF;
+	list-style: none;
+	position: absolute;
+	top: 0;
+}
+
+.navegacion .menu li.titulo-menu{
+	padding: 20px;
+	background: #5F6f81;
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
+}
+
+.navegacion .menu a{
+	display: block;
+	padding: 20px;
+	border-bottom : 1px solid #c6d0da;  
+	font-size: 22px;
+	font-weight: lighter;
+	text-decoration: none;
+	color: #575d69;
+}
+
+.navegacion .menu li span.icon-menu{
+	margin-right: 12px;
+}
+
+.navegacion .menu .item-submenu > a::after{
+	font: normal normal normal 14px/1 FontAwesome;
+  	font-size: inherit;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	content: '\f105';
+  	float: right;
+}
+
+
+/*SUBMENU==========*/
+.navegacion .submenu li.titulo-menu{
+	background: #fff;
+	color: #575d69;
+}
+
+.navegacion .submenu li.atras{
+	padding: 10px 20px;
+	background: #5F6f81;
+	color: #FFF;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.navegacion .submenu li.atras::before{
+	font: normal normal normal 14px/1 FontAwesome;
+  	font-size: inherit;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	content: '\f0d9';
+  	margin-right: 10px;
+
+}
