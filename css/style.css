@@ -139,6 +139,9 @@ p{
 	color: #666;
 }
 
+.box2{
+	width: 100%;
+}
 .box3 {
 	padding-bottom: 30px;
 } 
@@ -158,6 +161,57 @@ p{
 	font-weight: normal;
 }
 
+form{
+	width: 70%;
+	margin: 0 auto;
+}
+
+form h2{
+	text-align: center;
+	margin: 20px auto;
+}
+
+form input[type="text"] {
+	display: inline-block;
+	text-align: left;
+	margin: 0 auto;
+	width: 85%;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #ccc;
+	border: none;
+	margin-bottom: 15px;
+}
+
+form input[type="submit"]{
+	display: block;
+	position: relative;
+	float: right;
+	text-transform: uppercase;
+	padding: 7px 50px;
+	background-color: #1FB684;
+	border: none;
+	border-radius: 5px;
+	color: #FFF;
+	font-weight: bolder;
+	margin-top: 10px;
+	cursor: pointer;
+	right: 20px;
+}
+
+form label{
+	display: block;
+	text-transform: uppercase;
+	color: #666;
+	float: left;
+	margin-bottom: 3px;
+	padding-left: 25px;
+}
+
+
+.mobile-not{
+	display: none;
+}
 
 
 @media only screen and (min-width: 960px) {
@@ -248,7 +302,9 @@ h2{
 	text-align: left;
 	margin-bottom: 0;
 }
-
+.box2{
+	width: calc(100%/2);
+}
 .box3{
 	width: calc(100%/3);
 }
@@ -273,10 +329,20 @@ h2{
 	border: none;
 }
 
+form{
+    display: table;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 footer{
 	border-top: 5px solid #000;
 	height: 100px;
 	width: 960px;
+}
+
+.mobile-not{
+	display: initial;
 }
 
 }
