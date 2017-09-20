@@ -8,6 +8,7 @@ function abrirMenu(){
 	$('#site-cache').fadeIn().addClass('site-cache');
 	$('div.main').css({'left':'320px'});
 	// $('div.main').addClass('stop-scrolling');
+	$('.main').bind('touchmove', function(e){e.preventDefault()})
 };
 
 function cerrarMenu(){
@@ -20,6 +21,7 @@ function cerrarMenu(){
 	});
 	// $('.main').removeClass('stop-scrolling');
 	$('div.main').css({'left':'0px'});
+	$('.main').unbind('touchmove')
 	
 }
 
