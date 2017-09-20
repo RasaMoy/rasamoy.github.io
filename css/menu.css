@@ -126,9 +126,12 @@ div.site-cache{
 	z-index: 0;
 }
 
-@media screen and (min-width: 320px) {
-	
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 
+@media screen and (min-width: 320px) {
 	div.main{
 		padding: 80px 15px 20px 15px;
 	}
