@@ -6,18 +6,11 @@
 	box-sizing: border-box;
 }
 
-html{
-	position: absolute;
-	height: 100%;
-	width: 100%;
-}
+
 
 body{
 	font-family: 'Open Sans', arial, sans-serif;
 	background: #E8e8e8;
-	height: 100%;
-	width: 100%;
-	
 }
 
 header{
@@ -123,11 +116,12 @@ div.main{
 	transition: left .2s;
 	overflow-wrap: normal; 
 	min-width: 100%;
+	overflow: hidden;
 }
 
 
 div.site-cache{
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -135,6 +129,7 @@ div.site-cache{
 	transition: all linear 0.2s;
 	z-index: 0;
 	height: 100%;
+	background-color: rgba(0,0,0,.3);
 
 }
 
