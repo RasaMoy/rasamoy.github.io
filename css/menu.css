@@ -112,6 +112,7 @@ div.main{
 	z-index: -1;
 	left: 0;
 	transition: left .2s;
+	overflow-wrap: normal; 
 }
 
 
@@ -124,6 +125,7 @@ div.site-cache{
 	background-color: rgba(0,0,0,.5);
 	transition: all linear 0.2s;
 	z-index: 0;
+
 }
 
 .stop-scrolling {
@@ -134,6 +136,12 @@ div.site-cache{
 @media screen and (min-width: 320px) {
 	div.main{
 		padding: 80px 15px 20px 15px;
+		min-width: 100%;
+	}
+
+	.navegacion ul{
+		overflow-y: scroll; /* has to be scroll, not auto */
+  		-webkit-overflow-scrolling: touch;
 	}
 	
 }

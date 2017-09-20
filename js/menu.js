@@ -7,7 +7,7 @@ function abrirMenu(){
 	$('.navegacion .menu').css({'left':'0px'});
 	$('#site-cache').fadeIn().addClass('site-cache');
 	$('div.main').css({'left':'320px'});
-	$('div.main').addClass('stop-scrolling');
+	// $('div.main').addClass('stop-scrolling');
 };
 
 function cerrarMenu(){
@@ -18,7 +18,7 @@ function cerrarMenu(){
 	$('#site-cache').fadeOut( 200, function() {
 		$('#site-cache').removeClass('site-cache');
 	});
-	$('.main').removeClass('stop-scrolling');
+	// $('.main').removeClass('stop-scrolling');
 	$('div.main').css({'left':'0px'});
 	
 }
