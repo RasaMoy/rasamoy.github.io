@@ -6,6 +6,7 @@ function abrirMenu(){
 	$buttonMenu.removeClass('fa fa-bars').addClass('fa fa-close');
 	$('.navegacion .menu').css({'left':'0px'});
 	$('#site-cache').fadeIn().addClass('site-cache');
+	$('#site-cache2').fadeIn().addClass('site-cache');
 	$('div.main').css({'left':'320px'});
 	// $('div.main').addClass('stop-scrolling');
 	$('.main').bind('touchmove', function(e){e.preventDefault()})
@@ -18,6 +19,7 @@ function cerrarMenu(){
 	
 	$('#site-cache').fadeOut( 200, function() {
 		$('#site-cache').removeClass('site-cache');
+		$('#site-cache2').removeClass('site-cache');
 	});
 	// $('.main').removeClass('stop-scrolling');
 	$('div.main').css({'left':'0px'});
@@ -54,5 +56,8 @@ $buttonMenu.click(function() {
 	});
 
 $('#site-cache').click(function(){
+	cerrarMenu();
+});
+$('#site-cache2').click(function(){
 	cerrarMenu();
 });
