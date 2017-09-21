@@ -61,3 +61,29 @@ $('#site-cache').click(function(){
 $('#site-cache2').click(function(){
 	cerrarMenu();
 });
+
+
+// ----------SLIDER---------
+
+var indicadorSlide = 0;
+
+$('#left').click(function() {
+	moveSlider('left');
+});
+
+$('#right').click(function() {
+	moveSlider('right');
+});
+
+
+function moveSlider(direccion){
+	var limite = $('.slide-item').length;
+	indicadorSlide = (direccion == 'right') ? indicadorSlide + 1 : indicadorSlide - 1;
+	indicadorSlide = (indicadorSlide >= limite) ? 0 : indicadorSlide;
+	indicadorSlide = (indicadorSlide < 0) ? limite -1 : indicadorSlide;
+
+	console.log(limite + direccion + indicadorSlide);
+}
+
+
+
