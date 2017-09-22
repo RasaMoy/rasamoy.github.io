@@ -65,7 +65,7 @@ $('#site-cache2').click(function(){
 
 // ----------SLIDER---------
 
-var indicadorSlide = 0;
+var indicadorSlide = 2;
 
 $('#left').click(function() {
 	moveSlider('left');
@@ -78,9 +78,14 @@ $('#right').click(function() {
 
 function moveSlider(direccion){
 	var limite = $('.slide-item').length;
-	indicadorSlide = (direccion == 'right') ? indicadorSlide + 1 : indicadorSlide - 1;
+	indicadorSlide = (direccion == 'right') ? indicadorSlide - 1 : indicadorSlide + 1;
 	indicadorSlide = (indicadorSlide >= limite) ? 0 : indicadorSlide;
 	indicadorSlide = (indicadorSlide < 0) ? limite -1 : indicadorSlide;
+
+	$('.slide-item').hide();
+	$('.slide-item').eq(indicadorSlide).fadeIn();
+
+
 
 	console.log(limite + direccion + indicadorSlide);
 }

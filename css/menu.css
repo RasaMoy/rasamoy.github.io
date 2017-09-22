@@ -145,6 +145,10 @@ section.slider{
 	position: absolute;
 }
 
+ul.slider:first-child{
+	z-index: 999;
+}
+
 .slide-description-container{
 	position: absolute;
 	top: 0;
