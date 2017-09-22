@@ -207,8 +207,30 @@ ul.slider:first-child{
 	font-size: 30px;
 }
 .left{
-	left: 50px;
+	left: 50px;	
 }
+.left:after{
+	font: normal normal normal 14px/1 FontAwesome;
+  	font-size: inherit;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	content: '\f053';
+  	float: right;
+  	margin-right: 22px;
+}
+
+.right:after{
+	font: normal normal normal 14px/1 FontAwesome;
+  	font-size: inherit;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	content: '\f054';
+  	float: right;
+  	margin-right: 18px;
+}
+
 
 .right{
 	right: 50px;
@@ -267,8 +289,8 @@ div.site-cache{
 		height: 90vh;
 	}
 
-	.slider-content li  img{
-		width: 300%;
+	.slider-content li img{
+		width: 380%;
 		max-height: 90vh;
 	}
 
