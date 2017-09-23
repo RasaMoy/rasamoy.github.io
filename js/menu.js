@@ -1,3 +1,7 @@
+$(window).load(function () {
+  $('#cargando').hide();
+});
+
 var $buttonMenu = $('#button-menu');
 // -------------------------
 // -----MOSTRANDO MENU------
