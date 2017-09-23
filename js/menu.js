@@ -84,10 +84,6 @@ function moveSlider(direccion){
 
 	$('.slide-item').hide();
 	$('.slide-item').eq(indicadorSlide).fadeIn();
-
-
-
-	console.log(limite + direccion + indicadorSlide);
 }
 
 
