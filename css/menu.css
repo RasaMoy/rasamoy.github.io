@@ -7,8 +7,6 @@
 	box-sizing: border-box;
 }
 
-
-
 body{
 	font-family: 'Open Sans', arial, sans-serif;
 	background: #FFF;
@@ -143,6 +141,7 @@ section.slider{
 
  li.slide-item{
 	position: absolute;
+	
 }
 
 ul.slider:first-child{
@@ -312,13 +311,13 @@ div.site-cache{
 	}
 
 	.left{
-		top: 35%;
-		left: 30px;
+		top: 36%;
+		left: 15px;
 	}
 
 	.right{
-		top: 35%;
-		right: 30px;
+		top: 36%;
+		right: 15px;
 	}
 
 	.half{
