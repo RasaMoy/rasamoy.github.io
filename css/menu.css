@@ -187,15 +187,25 @@ section.slider{
 	margin-bottom: 40px;
 }
 
-.slide-description button{
+ button.general-button{
+ 	font-family: 'Open Sans', arial, sans-serif;
 	padding: 10px 26px;
 	border: none;
 	border-radius: 3px;
-	background-color: #1B6DBA;
 	color: #FFF;
 	text-transform: uppercase;
 	font-weight: bold;
 	cursor: pointer;
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(left, #1e5799 0%, #547499 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #1e5799 0%,#547499 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #1e5799 0%,#547499 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#547499',GradientType=1 ); /* IE6-9 */
+}
+
+button.general-button:hover{
+	color: #34495E;
+	transition: color 1s;
 }
 
 .left, .right{
@@ -209,7 +219,10 @@ section.slider{
 	border: none;
 	color: #FFF;
 	font-size: 30px;
+	display: none;
 }
+
+
 .left{
 	left: 50px;	
 }
@@ -319,11 +332,13 @@ div.site-cache{
 	.left{
 		top: 36%;
 		left: 15px;
+		display: list-item;
 	}
 
 	.right{
 		top: 36%;
 		right: 15px;
+		display: list-item;
 	}
 
 	.half{

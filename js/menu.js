@@ -88,8 +88,17 @@ function moveSlider(direccion){
 
 	$('.slide-item').hide();
 	$('.slide-item').eq(indicadorSlide).fadeIn();
-	// $('slide-description').eq(indicadorSlide).addClass('.fadeIn');
 }
+
+	$('.slide-item').on('mouseenter', function(){
+		$('button.right , button.left').fadeIn();
+	});
+	
+	$('.slide-item').on('mouseleave', function(){
+		$('button.right , button.left').fadeOut();
+	});
+
+
 
 
 
