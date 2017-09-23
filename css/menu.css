@@ -350,6 +350,12 @@ div.site-cache{
 		display: list-item;
 	}
 
+	.right:hover, .left:hover{
+	transform: none;
+	}
+
+
+
 	.half{
 		width: 100%;
 	}
