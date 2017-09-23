@@ -219,9 +219,18 @@ button.general-button:hover{
 	border: none;
 	color: #FFF;
 	font-size: 30px;
-	display: none;
 }
 
+.right:hover{
+	transform: translateX(10px);
+	cursor: pointer;
+	transition: all .8s;
+}
+.left:hover{
+	transform: translateX(-10px);
+	cursor: pointer;
+	transition: all .8s;
+} 
 
 .left{
 	left: 50px;	

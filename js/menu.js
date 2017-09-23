@@ -90,13 +90,6 @@ function moveSlider(direccion){
 	$('.slide-item').eq(indicadorSlide).fadeIn();
 }
 
-	$('.slide-item').on('mouseenter', function(){
-		$('button.right , button.left').fadeIn();
-	});
-	
-	$('.slide-item').on('mouseleave', function(){
-		$('button.right , button.left').fadeOut();
-	});
 
 
 
