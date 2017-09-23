@@ -128,33 +128,33 @@ div.main{
 }
 
 section.slider{
-	height: 80vh;
+	height: 91vh;
 	overflow: hidden;
+	background: #5F6F81;
 
 }
 
 .slider-content ul{
 	list-style: none;
+	overflow: hidden;
 
 }
 
 .slider-content li{
-	display: inline-block;
+	/*display: inline-block;*/
 	/*white-space: nowrap;*/
 }
 .slider-content li > img{
 	width: 100%;
-	max-height: 80vh;
+	min-height: 92vh;
 } 
 
  li.slide-item{
-	position: absolute;
+	position: relative;
+	overflow: hidden;
 	
 }
 
-ul.slider:first-child{
-	z-index: 999;
-}
 
 .slide-description-container{
 	position: absolute;
@@ -168,11 +168,8 @@ ul.slider:first-child{
 
 .slide-description{
 	margin: 0 auto;
-    display: table;
-    position: relative;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);	
+	position: relative;
+	top: 25%;
 }
 
 
@@ -203,7 +200,7 @@ ul.slider:first-child{
 
 .left, .right{
 	position: absolute;
-	top: 25%;
+	top: 30%;
 	z-index: 999;
 	height: 60px;
 	width: 60px;
@@ -294,6 +291,7 @@ div.site-cache{
 
 	section.slider{
 		height: 90vh;
+		overflow: hidden;
 	}
 
 	.slider-content li img{
@@ -302,9 +300,9 @@ div.site-cache{
 	}
 
 	.slide-description{
-
-    transform: translateY(-50%);
-
+	margin: 0 auto;
+	position: relative;
+	top: 15%;
 	}
 
 	.slide-description h2{
@@ -340,3 +338,54 @@ div.site-cache{
 }
 
 
+
+
+/*----------------ANIMACIONES--------------------*/
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}		
+}

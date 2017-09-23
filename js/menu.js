@@ -69,7 +69,7 @@ $('#site-cache2').click(function(){
 
 // ----------SLIDER---------
 
-var indicadorSlide = 2;
+var indicadorSlide = 0;
 
 $('#left').click(function() {
 	moveSlider('left');
@@ -82,13 +82,16 @@ $('#right').click(function() {
 
 function moveSlider(direccion){
 	var limite = $('.slide-item').length;
-	indicadorSlide = (direccion == 'right') ? indicadorSlide - 1 : indicadorSlide + 1;
+	indicadorSlide = (direccion == 'right') ? indicadorSlide + 1 : indicadorSlide - 1;
 	indicadorSlide = (indicadorSlide >= limite) ? 0 : indicadorSlide;
 	indicadorSlide = (indicadorSlide < 0) ? limite -1 : indicadorSlide;
 
 	$('.slide-item').hide();
 	$('.slide-item').eq(indicadorSlide).fadeIn();
+	// $('slide-description').eq(indicadorSlide).addClass('.fadeIn');
 }
+
+
 
 
 
