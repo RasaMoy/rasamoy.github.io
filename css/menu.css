@@ -210,7 +210,7 @@ button.general-button:hover{
 
 .left, .right{
 	position: absolute;
-	top: 30%;
+	top: 370px;
 	z-index: 999;
 	height: 60px;
 	width: 60px;
@@ -272,12 +272,65 @@ section.content{
 
 .half{
 	width: calc(100%/2);
-	padding-bottom: 40px;
+	height: 450px;
+	display: block;
+	
+	
+}
+
+.content-full{
+	
+	width: 100%;
+	background: red;
+	height: 570px;
+	display: block;
+	margin-bottom: 50px;
+	
+}
+
+.content{
+
 }
 
 .content h2{
 	font-family: 'Merriweather', serif;
 	color: #000;
+	font-size: 2.6em;
+	margin-bottom: 40px;
+}
+
+.content p{
+	margin-bottom: 30px;
+}
+
+.column-content{
+	margin: 0 auto;
+    display: table;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+
+.column img {
+  width: 100%;
+  display: block;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  width: calc(100% / 3);
+}
+
+.section1{
+	background: url(../img/section__ask.jpg);
+}
+
+h3{
+	font-family: 'Merriweather', serif;
+	color: #FFF;
 	font-size: 2.6em;
 	margin-bottom: 40px;
 }
@@ -298,8 +351,14 @@ div.site-cache{
 	text-align: center;
 }
 
+@media only screen and (max-width: 1150px){
 
+.half{
+		width: 100%;
+		height: auto;
+	}
 
+}
 
 
 @media only screen and (max-width: 768px){
@@ -319,6 +378,7 @@ div.site-cache{
 	.slider-content li img{
 		width: 380%;
 		max-height: 90vh;
+
 	}
 
 	.slide-description{
@@ -339,13 +399,13 @@ div.site-cache{
 	}
 
 	.left{
-		top: 36%;
+		top: 80vh;
 		left: 15px;
 		display: list-item;
 	}
 
 	.right{
-		top: 36%;
+		top: 80vh;
 		right: 15px;
 		display: list-item;
 	}
@@ -354,18 +414,36 @@ div.site-cache{
 	transform: none;
 	}
 
-
-
-	.half{
-		width: 100%;
-	}
-
 	section.content{
 	margin: 50px 20px;
+
 	}
+
+	.column {
+    width: calc(100% / 2);
+  }
+
+  .content-full{
+	
+	
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	
+}
+
 
 
 }
+
+@media only screen and (max-width: 400px){
+	.column {
+    width: 100%;
+  }
+}
+
+
 
 
 
