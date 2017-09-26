@@ -360,12 +360,13 @@ div.site-cache{
 
 }
 
-
+@media only screen and (max-width: 900px){
+.column {
+    width: calc(100% / 3);
+  }
+}
 @media only screen and (max-width: 768px){
 
-	div.main{
-		/*height: 100%;*/
-	}
 	.navegacion .menu a{
 		padding: 15px;
 	}
@@ -430,9 +431,7 @@ div.site-cache{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	
-	
-}
-
+	}
 
 
 }
@@ -441,6 +440,8 @@ div.site-cache{
 	.column {
     width: 100%;
   }
+
+
 }
 
 
