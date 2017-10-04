@@ -76,7 +76,7 @@ $(function(){
 	loadTimetable();
 
 	$('.evento').on('click', function(e){
-		
+
 	e.preventDefault();
 	var loc = this.id.toUpperCase();
 
@@ -90,7 +90,7 @@ $(function(){
 	}
 
 	$('#sessions').html('<ul>' + newContent + '</ul>');
-	$('.events a.active').removeClass('active');
+	$('#events a.active').removeClass('active');
 	$(this).addClass('active');
 	$('.description').text('');
 	});
