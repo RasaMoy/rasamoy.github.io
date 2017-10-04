@@ -1,3 +1,5 @@
+var times;
+
 
 $(window).load(function() {
     $(".loader").fadeOut("slow");
@@ -54,7 +56,7 @@ $('nav a').on('click', function(e){
 });
 
 $(function(){
-	var times;
+	
 
 	$.ajax({
 		beforeSend: function(xhr){
@@ -75,7 +77,13 @@ $(function(){
 
 	loadTimetable();
 
-	$('.evento').on('click', function(e){
+	
+});
+
+
+// CLICK ON THE EVENT TO LOAD A TIMETABLE
+
+$('.evento').on('click', function(e){
 
 	e.preventDefault();
 	var loc = this.id.toUpperCase();
@@ -103,10 +111,4 @@ $(function(){
 		$('.description').load(fragment);
 
 	});
-});
-
-
-// CLICK ON THE EVENT TO LOAD A TIMETABLE
-
-
 
