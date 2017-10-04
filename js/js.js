@@ -74,12 +74,8 @@ $(function(){
 	}
 
 	loadTimetable();
-});
 
-
-// CLICK ON THE EVENT TO LOAD A TIMETABLE
-
-$('.evento').on('click', function(e){
+	$('.evento').on('click', function(e){
 	e.preventDefault();
 	var path = this.id.toUpperCase();
 
@@ -97,5 +93,11 @@ $('.evento').on('click', function(e){
 	$(this).addClass('active');
 
 	$('.description').text('');
+	});
 });
+
+
+// CLICK ON THE EVENT TO LOAD A TIMETABLE
+
+
 
