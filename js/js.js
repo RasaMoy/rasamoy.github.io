@@ -101,14 +101,14 @@ $('.evento').on('click', function(e){
 	$('#events a.active').removeClass('active');
 	$(this).addClass('active');
 	$('.description').text('');
-	});
+});
 
-	$('.tema').on('click', function(event) {
+$('.tema').on('click', function(event) {
 		event.preventDefault();
 		var fragment = this.href;
 
 		fragment = fragment.replace('#', ' #');
 		$('.description').load(fragment);
 
-	});
+});
 
