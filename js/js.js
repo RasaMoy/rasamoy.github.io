@@ -85,7 +85,11 @@ $('#events').on('click', 'a', function(e){
 
 	var newContent = '';
 	for (var i = 0; i < times[loc].length; i++) {
-		newContent += 0;
+		newContent += '<li><span>' + times[loc][i].time + '</span>'
+		newContent += '<a href="descriptions.html#';
+		newContent += times[loc][i].title.replace(/ /g, '-') + '">';
+		newContent += times[loc][i].title + '</a></li>';
+		console.log(newContent);
 	}
 	
 })
