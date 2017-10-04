@@ -110,36 +110,11 @@ $('#content').on('click', '.box3 #sessions li a', function(event) {
 
 });
 
-	
-});
-
-
-
 
 $( document ).ajaxStop(function(){
 
 	console.log('aversicierto');
 	
-
-	$.ajax({
-		beforeSend: function(xhr){
-			if (xhr.overrideMimeType){
-				xhr.overrideMimeType("application/json");
-			}
-		}
-	});
-
-	function loadTimetable(){
-		$.getJSON('data/example.json')
-		.done( function(data){
-			times = data;
-		}).fail( function(){
-			// $('#events').html('Sorry! We could not load rhe timetable at the moment');
-		});
-	}
-
-	loadTimetable();
-
 
 	$('#content').on('click', '.box3 #events a', function(e){
 
@@ -173,6 +148,14 @@ $('#content').on('click', '.box3 #sessions li a', function(event) {
 
 	
 });
+
+	
+});
+
+
+
+
+
 
 
 // CLICK ON THE EVENT TO LOAD A TIMETABLE
