@@ -116,6 +116,8 @@ $('#content').on('click', '.box3 #sessions li a', function(event) {
 
 
 function cargar(){
+
+	console.log('aversicierto');
 	
 
 	$.ajax({
