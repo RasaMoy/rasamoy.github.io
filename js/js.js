@@ -79,7 +79,7 @@ $(function(){
 
 // CLICK ON THE EVENT TO LOAD A TIMETABLE
 
-$('#events').on('click', 'a', function(e){
+$('.evento').on('click', function(e){
 	e.preventDefault();
 	var path = this.id.toUpperCase();
 
@@ -91,6 +91,7 @@ $('#events').on('click', 'a', function(e){
 		newContent += times[loc][i].title + '</a></li>';
 		console.log(newContent);
 	}
-	
+
+	$('#sessions').html('<ul>' + newContent + '</ul>');
 })
 
