@@ -95,13 +95,13 @@ $(function(){
 	$('.description').text('');
 	});
 
-	$('.sessions li a').on('click', function(event) {
+	$('#sessions').on('click', '#sessions li a', function(event) {
 		event.preventDefault();
 		var fragment = this.href;
 
 		fragment = fragment.replace('#', ' #');
 		$('.description').load(fragment);
-		
+
 	});
 });
 
