@@ -1,5 +1,5 @@
 var times;
-console.log('ultimo de hoy');
+console.log('ultimo de hoy _D');
 
 
 $(window).load(function() {
@@ -54,7 +54,7 @@ $('nav a').on('click', function(e){
 	$('body').addClass('nav-pusherback');
 	$('body').removeClass('nav-pusher');
 	$('#site-cache').removeClass('site-cache');
-	cargar();
+	
 });
 
 $(function(){
@@ -116,7 +116,7 @@ $('#content').on('click', '.box3 #sessions li a', function(event) {
 
 
 
-$( document ).ajaxStop(function cargar(){
+$( document ).ajaxStop(function(){
 
 	console.log('aversicierto');
 	
