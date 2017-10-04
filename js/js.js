@@ -53,6 +53,7 @@ $('nav a').on('click', function(e){
 	$('body').addClass('nav-pusherback');
 	$('body').removeClass('nav-pusher');
 	$('#site-cache').removeClass('site-cache');
+	cargar();
 });
 
 $(function(){
@@ -110,6 +111,65 @@ $('#content').on('click', '.box3 #sessions li a', function(event) {
 
 	
 });
+
+
+
+
+function cargar(){
+	
+
+	$.ajax({
+		beforeSend: function(xhr){
+			if (xhr.overrideMimeType){
+				xhr.overrideMimeType("application/json");
+			}
+		}
+	});
+
+	function loadTimetable(){
+		$.getJSON('data/example.json')
+		.done( function(data){
+			times = data;
+		}).fail( function(){
+			// $('#events').html('Sorry! We could not load rhe timetable at the moment');
+		});
+	}
+
+	loadTimetable();
+
+
+	$('#content').on('click', '.box3 #events a', function(e){
+
+	e.preventDefault();
+	var loc = this.id.toUpperCase();
+
+	var newContent = '';
+	for (var i = 0; i < times[loc].length; i++) {
+		newContent += '<li><span>' + times[loc][i].time + '</span>'
+		newContent += '<a href="descriptions.html#';
+		newContent += times[loc][i].title.replace(/ /g, '-') + '" class="tema">';
+		newContent += times[loc][i].title + '</a></li>';
+		
+	}
+
+	$('#sessions').html('<ul>' + newContent + '</ul>');
+	$('#events a.active').removeClass('active');
+	$(this).addClass('active');
+	$('.description').text('');
+});
+
+$('#content').on('click', '.box3 #sessions li a', function(event) {
+		event.preventDefault();
+		var fragment = this.href;
+
+		fragment = fragment.replace('#', ' #');
+		$('#description').load(fragment);
+		console.log(fragment);
+
+});
+
+	
+}
 
 
 // CLICK ON THE EVENT TO LOAD A TIMETABLE
