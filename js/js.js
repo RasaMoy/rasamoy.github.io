@@ -85,7 +85,7 @@ $('#events').on('click', 'a', function(e){
 
 	var newContent = '';
 	for (var i = 0; i < times[loc].length; i++) {
-		newContent +=  
+		newContent += 0;
 	}
 	
 })
