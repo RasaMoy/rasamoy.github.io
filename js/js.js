@@ -76,6 +76,7 @@ $(function(){
 	loadTimetable();
 
 	$('.evento').on('click', function(e){
+		
 	e.preventDefault();
 	var loc = this.id.toUpperCase();
 
