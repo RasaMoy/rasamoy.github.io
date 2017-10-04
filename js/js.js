@@ -103,7 +103,7 @@ $('.evento').on('click', function(e){
 	$('.description').text('');
 });
 
-$('#content').on('click', '#sessions li a', function(event) {
+$('#content').on('click', '.box3 #sessions li a', function(event) {
 		event.preventDefault();
 		var fragment = this.href;
 
@@ -113,3 +113,4 @@ $('#content').on('click', '#sessions li a', function(event) {
 
 });
 
+ 
