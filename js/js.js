@@ -94,6 +94,15 @@ $(function(){
 	$(this).addClass('active');
 	$('.description').text('');
 	});
+
+	$('.sessions li a').on('click', function(event) {
+		event.preventDefault();
+		var fragment = this.href;
+
+		fragment = fragment.replace('#', ' #');
+		$('.description').load(fragment);
+		
+	});
 });
 
 
