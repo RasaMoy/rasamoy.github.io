@@ -116,7 +116,7 @@ $('#content').on('click', '.box3 #sessions li a', function(event) {
 
 
 
-function cargar(){
+$( document ).ajaxStop(function cargar(){
 
 	console.log('aversicierto');
 	
@@ -172,7 +172,7 @@ $('#content').on('click', '.box3 #sessions li a', function(event) {
 });
 
 	
-}
+});
 
 
 // CLICK ON THE EVENT TO LOAD A TIMETABLE
