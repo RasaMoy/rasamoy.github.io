@@ -83,7 +83,7 @@ $(function(){
 
 // CLICK ON THE EVENT TO LOAD A TIMETABLE
 
-$('#content').on('click', '#events a', function(e){
+$('#content').on('click', '.box3 #events a', function(e){
 
 	e.preventDefault();
 	var loc = this.id.toUpperCase();
