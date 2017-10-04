@@ -93,5 +93,9 @@ $('.evento').on('click', function(e){
 	}
 
 	$('#sessions').html('<ul>' + newContent + '</ul>');
-})
+	$('.events a.active').removeClass('active');
+	$(this).addClass('active');
+
+	$('.description').text('');
+});
 
