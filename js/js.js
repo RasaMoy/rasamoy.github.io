@@ -91,8 +91,8 @@ $('.evento').on('click', function(e){
 	var newContent = '';
 	for (var i = 0; i < times[loc].length; i++) {
 		newContent += '<li><span>' + times[loc][i].time + '</span>'
-		newContent += '<a href="descriptions.html# class="tema"';
-		newContent += times[loc][i].title.replace(/ /g, '-') + '">';
+		newContent += '<a href="descriptions.html#';
+		newContent += times[loc][i].title.replace(/ /g, '-') + '" class="tema">';
 		newContent += times[loc][i].title + '</a></li>';
 		console.log(newContent);
 	}
