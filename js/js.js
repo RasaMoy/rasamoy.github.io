@@ -77,13 +77,8 @@ $(function(){
 
 	loadTimetable();
 
-	
-});
 
-
-// CLICK ON THE EVENT TO LOAD A TIMETABLE
-
-$('#content').on('click', '.box3 #events a', function(e){
+	$('#content').on('click', '.box3 #events a', function(e){
 
 	e.preventDefault();
 	var loc = this.id.toUpperCase();
@@ -112,5 +107,13 @@ $('#content').on('click', '.box3 #sessions li a', function(event) {
 		console.log(fragment);
 
 });
+
+	
+});
+
+
+// CLICK ON THE EVENT TO LOAD A TIMETABLE
+
+
 
  
