@@ -1,4 +1,5 @@
 var times;
+console.log('cargo?');
 
 
 $(window).load(function() {
