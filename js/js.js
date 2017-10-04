@@ -91,7 +91,7 @@ $('.evento').on('click', function(e){
 	var newContent = '';
 	for (var i = 0; i < times[loc].length; i++) {
 		newContent += '<li><span>' + times[loc][i].time + '</span>'
-		newContent += '<a href="descriptions.html# ';
+		newContent += '<a href="descriptions.html#';
 		newContent += times[loc][i].title.replace(/ /g, '-') + '" class="tema">';
 		newContent += times[loc][i].title + '</a></li>';
 		
@@ -103,7 +103,7 @@ $('.evento').on('click', function(e){
 	$('.description').text('');
 });
 
-$('.tema').on('click', function(event) {
+$('#content').on('click', '#sessions li a', function(event) {
 		event.preventDefault();
 		var fragment = this.href;
 
