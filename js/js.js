@@ -1,5 +1,5 @@
 var times;
-console.log('cargo?');
+console.log('ultimo de hoy');
 
 
 $(window).load(function() {
