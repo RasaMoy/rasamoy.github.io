@@ -77,7 +77,7 @@ $(function(){
 
 	$('.evento').on('click', function(e){
 	e.preventDefault();
-	var path = this.id.toUpperCase();
+	var loc = this.id.toUpperCase();
 
 	var newContent = '';
 	for (var i = 0; i < times[loc].length; i++) {
