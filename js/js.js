@@ -83,7 +83,7 @@ $(function(){
 	var newContent = '';
 	for (var i = 0; i < times[loc].length; i++) {
 		newContent += '<li><span>' + times[loc][i].time + '</span>'
-		newContent += '<a href="descriptions.html#';
+		newContent += '<a href="descriptions.html# class="tema"';
 		newContent += times[loc][i].title.replace(/ /g, '-') + '">';
 		newContent += times[loc][i].title + '</a></li>';
 		console.log(newContent);
@@ -95,7 +95,7 @@ $(function(){
 	$('.description').text('');
 	});
 
-	$('#sessions').on('click', '#sessions li a', function(event) {
+	$('.tema').on('click', function(event) {
 		event.preventDefault();
 		var fragment = this.href;
 
