@@ -53,3 +53,35 @@ $('nav a').on('click', function(e){
 	$('#site-cache').removeClass('site-cache');
 });
 
+$(function(){
+	var times;
+
+	$.ajax({
+		beforeSend: function(xhr){
+			if (xhr.overrideMimeType){
+				xhr.overrideMimeType("application/json");
+			}
+		}
+	});
+
+	function loadTimetable(){
+		$.getJSON('data/example.json')
+		.done( function(data){
+			times = data;
+		}).fail( function(){
+			$('#events').html('Sorry! We could not load rhe timetable at the moment');
+		});
+	}
+
+	loadTimetable();
+});
+
+
+// CLICK ON THE EVENT TO LOAD A TIMETABLE
+
+$('#events').on('click', 'a', function(e){
+	e.preventDefault();
+	var path = this.id.toUpperCase();
+	
+})
+
