@@ -113,7 +113,7 @@ $('#content').on('click', '.box3 #sessions li a', function(event) {
 
 $( document ).ajaxStop(function(){
 
-	console.log('aversicierto');
+	console.log('aversicierto5');
 	
 
 	$('#content').on('click', '.box3 #events a', function(e){
