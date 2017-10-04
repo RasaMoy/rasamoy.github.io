@@ -69,7 +69,7 @@ $(function(){
 		.done( function(data){
 			times = data;
 		}).fail( function(){
-			$('#events').html('Sorry! We could not load rhe timetable at the moment');
+			// $('#events').html('Sorry! We could not load rhe timetable at the moment');
 		});
 	}
 
@@ -82,6 +82,11 @@ $(function(){
 $('#events').on('click', 'a', function(e){
 	e.preventDefault();
 	var path = this.id.toUpperCase();
+
+	var newContent = '';
+	for (var i = 0; i < times[loc].length; i++) {
+		newContent +=  
+	}
 	
 })
 
